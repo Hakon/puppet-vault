@@ -23,7 +23,7 @@ CapabilityBoundingSet=CAP_SYSLOG
 NoNewPrivileges=yes
 <% else -%>
 SecureBits=keep-caps
-Capabilities=CAP_IPC_LOCK+ep
+AmbientCapabilities=CAP_SYSLOG CAP_IPC_LOCK+ep
 CapabilityBoundingSet=CAP_SYSLOG CAP_IPC_LOCK
 NoNewPrivileges=yes
 <% end -%>
